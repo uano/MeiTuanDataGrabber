@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzl.demo.mapper.MeituanWmMapper">
+
+    <resultMap id="BaseResultMap" type="com.yzl.demo.entity.MeituanWm">
+            <id property="wmShopId" column="wm_shop_id" jdbcType="VARCHAR"/>
+            <result property="wmShopName" column="wm_shop_name" jdbcType="VARCHAR"/>
+            <result property="addTime" column="add_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        wm_shop_id,wm_shop_name,add_time
+    </sql>
+</mapper>

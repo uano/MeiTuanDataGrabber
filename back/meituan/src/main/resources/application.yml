@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: meituanDemo
+  datasource:
+    url: jdbc:mysql://ip:3306/yourDatabase?serverTimezone=Asia/Shanghai
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  config: classpath:logback-spring.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzl.demo.mapper.MeituanWmTurnoverMapper">
+
+    <resultMap id="BaseResultMap" type="com.yzl.demo.entity.MeituanWmTurnover">
+            <result property="wmShopId" column="wm_shop_id" jdbcType="VARCHAR"/>
+            <result property="wmTime" column="wm_time" jdbcType="VARCHAR"/>
+            <result property="wmShopName" column="wm_shop_name" jdbcType="VARCHAR"/>
+            <result property="wmTurnover" column="wm_turnover" jdbcType="DECIMAL"/>
+            <result property="wmOrder" column="wm_order" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        wm_shop_id,wm_time,wm_shop_name,
+        wm_turnover,wm_order,wm_cus_price
+    </sql>
+
+</mapper>
